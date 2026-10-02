@@ -12,7 +12,7 @@ def format_single_linter_file(file_path: str, errors: list) -> dict:
                         "message": error1["text"],
                         "name": error1["code"],
                         "source": "flake8"}
-                        for error1 in errors if error1["filename"] == file_path],
+                    for error1 in errors if error1["filename"] == file_path],
             "path": file_path, "status": "failed"}
 
 
