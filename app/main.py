@@ -20,7 +20,8 @@ def format_single_linter_file(file_path: str, errors: list) -> dict:
 def format_linter_report(linter_report: dict) -> list:
     return [
             {
-                "errors": [] if not value1 else [{"line": error2["line_number"],
+                "errors": [] if not value1 else
+                    [{"line": error2["line_number"],
                     "column": error2["column_number"],
                     "message": error2["text"],
                     "name": error2["code"],
